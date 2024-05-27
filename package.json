@@ -13,13 +13,19 @@
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.15.18",
     "@mui/material": "^5.15.18",
+    "@radix-ui/react-slot": "^1.0.2",
     "@shopify/shopify-api": "^10.0.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "graphql": "^16.8.1",
     "isomorphic-unfetch": "^4.0.2",
+    "lucide-react": "^0.379.0",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.77.2",
-    "shopify-buy": "^2.22.0"
+    "shopify-buy": "^2.22.0",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.24.5",

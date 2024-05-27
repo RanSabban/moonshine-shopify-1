@@ -1,19 +1,20 @@
-import client from '../lib/shopify';
+import ProductCard from '@/components/Products/ProductCard';
+import client from '../../lib/shopify';
 import { Product } from 'shopify-buy';
+import Image from 'next/image';
 
 export default async function Home() {
   const products = await client.product.fetchAll() as Product[];
+
+  console.log('I am a PRODCUT',products)
+  
 
   return (
     <div>
       <h1>Moon Shine Products</h1>
       <ul>
         {products.map((product) => (
-          <li key={product.id}>
-            <h2>{product.title}</h2>
-            <p>{product.description}</p>
-            {/* <img src={product.images[0].src} alt={product.title} /> */}
-          </li>
+            <ProductCard key={product.id} product={product} />
         ))}
       </ul>
     </div>
